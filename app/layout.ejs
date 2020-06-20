@@ -1,22 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <%- include('head.ejs') %>
+  </head>
 
-<head>
-  <%- include('head.ejs') %> 
-</head>
+  <body>
+    <header class="header">
+      <a class="btn-hamburger" href="#">
+        <img src="assets/img/ic_menu_24px.svg" alt="menu-icon" />
+      </a>
+      <h1 class="logo">
+        <a href="#">LOGO</a>
+      </h1>
+      <ul class="menu">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+    </header>
 
-<body>
-  <header class="header">
-    這是 header
-  </header>
+    <%- contents %>
 
-  <%- contents %>
+    <footer class="footer">
+      <div class="container">
+        <nav class="linkMap-contactMethod-socialIcon">
+          <div>
+            <ul class="link-map">
+              <li><a href="#">首頁</a></li>
+              <li><a href="#">系列鏡框</a></li>
+              <li><a href="#">門市據點</a></li>
+              <li><a href="#">部落格</a></li>
+              <li><a href="#">常見問題</a></li>
+            </ul>
+            <ul class="info-contact">
+              <li>
+                <div class="img-wrap">
+                  <img src="./assets/img/icon-phone.svg" alt="icon-phone" />
+                </div>
+                <p>0800-000-000</p>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img src="./assets/img/icon-mail.svg" alt="icon-mail" />
+                </div>
+                <p>glasses@business.com</p>
+              </li>
+            </ul>
+          </div>
+          <ul class="info-social">
+            <li>
+              <a href="#"><img src="./assets/img/icon-fb.svg" alt="icon-fb" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/img/icon-ig.svg" alt="icon-ig" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/img/icon-line.svg" alt="icon-line" /></a>
+            </li>
+          </ul>
+        </nav>
 
-  <footer class="footer">
-    footer
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
-</body>
+        <div class="copyright">
+          <img src="./assets/img/logo.png" alt="logo" />
+          <div class="statement-policy">
+            <p>Copyright © 2020 Glasses.All rights reserved.</p>
+            <div class="policy">
+              <a href="#">隱私權政策</a>
+              <a href="#">服務條款</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
 </html>

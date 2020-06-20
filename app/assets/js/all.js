@@ -1,5 +1,6 @@
-console.log('Hello!');
-
-$(document).ready(() => {
-  console.log('HexSchool Hello!');
+$(document).ready(function () {
+    $(".btn-hamburger").click(function (e) {
+        e.preventDefault();
+        $(".menu").toggleClass("active");
+    });
 });

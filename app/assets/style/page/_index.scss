@@ -1,0 +1,753 @@
+/***************
+Cover Page
+****************/
+.cover-page {
+    background-image: url(../img/banner.png);
+
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.anchor-slogan {
+    height: 840px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cover-title {
+    text-align: right;
+    color: #650300;
+    font-weight: 600;
+}
+
+.title-prefix {
+    font-size: 36px;
+    line-height: 54px;
+
+    font-weight: 500;
+    height: 50px;
+}
+
+.slogan-title {
+    font-size: 64px;
+    line-height: 96px;
+
+    height: 90px;
+}
+
+/* pad */
+@media (max-width: 992px) {
+    .container {
+        max-width: 672px;
+    }
+
+    .title-prefix {
+        font-size: 20px;
+        line-height: 30px;
+
+        height: 28px;
+    }
+
+    .slogan-title {
+        font-size: 48px;
+        line-height: 72px;
+
+        height: 67px;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .cover-page {
+        background-image: url(../img/banner-mobile.png);
+        background-size: cover;
+    }
+
+    .container {
+        max-width: 352px;
+    }
+
+    .anchor-slogan {
+        max-height: 394px;
+    }
+
+    .title-prefix {
+        font-size: 16px;
+        line-height: 30px;
+
+        height: 22px;
+    }
+
+    .slogan-title {
+        font-size: 32px;
+        line-height: 72px;
+
+        height: 45px;
+    }
+}
+
+/****************
+* Features
+* 專業是有價的
+******************/
+.feature {
+    padding-top: 64px;
+    padding-bottom: 80px;
+    background-color: #AA06010D;
+}
+
+/* pad */
+@media (max-width: 992px) {
+    .feature {
+        padding-top: 40px;
+        padding-bottom: 48px;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .feature {
+        padding-top: 32px;
+    }
+}
+
+.feature h2,
+.feature h3 {
+    color: #650300;
+    line-height: 1.5em;
+}
+
+.feature p {
+    line-height: 1.5em;
+}
+
+.feature h2 {
+    margin-bottom: 44px;
+    font-size: 48px;
+
+    font-weight: 900;
+}
+
+.feature h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media (max-width: 992px) {
+    .feature h2 {
+        margin-bottom: 12px;
+        font-size: 32px;
+    }
+
+    .feature h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .feature h2 {
+        margin-bottom: 12px;
+        font-size: 24px;
+        line-height: 2em;
+    }
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+.feature h2,
+.feature .card-collection {
+    text-align: center;
+}
+
+/* 卡片與卡片之間的排版 */
+.feature .card,
+.feature .card-collection {
+    display: flex;
+}
+
+.feature .card-collection {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    /*每張卡片齊頭*/
+    align-items: flex-start;
+}
+
+/* 卡片內容排版 */
+.feature .card {
+    /* pb 為0, 底下 paragraph 直接碰在 card 最底部 */
+    padding: 16px 37px 0;
+
+    flex-direction: column;
+    /* 預設由上往下排排，但排版為水平置中 */
+    align-items: center;
+
+    /* 每張圖左右間隔 206px 和桌機版 XD稿 一樣*/
+    width: 23.5%;
+}
+
+/* pad */
+@media (max-width: 992px) {
+    .feature .card {
+        padding: 20px 50px 8px;
+        width: 48%;
+        margin-bottom: 12px;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .feature .card {
+        padding: 20px 64px 8px;
+        width: 98%;
+        margin-bottom: 0;
+    }
+}
+
+/* Set card img container */
+.feature .card .img-wrap {
+    /* svg圖檔垂直置中於100*100 的容器中 */
+    display: flex;
+    align-items: center;
+
+    width: 100px;
+    height: 100px;
+
+    margin-bottom: 40px;
+}
+
+/* pad */
+/* mobile: the same as pad */
+@media (max-width: 992px) {
+    .feature .card .img-wrap {
+        width: 80px;
+        height: 80px;
+
+        margin-bottom: 16px;
+    }
+}
+
+/* Set card subtitle(h3) margin bottom */
+.feature .card h3 {
+    margin-bottom: 4px;
+}
+
+/* pad */
+/* mobile: the same as desktop*/
+@media (max-width: 992px) {
+    .feature .card h3 {
+        margin-bottom: 8px;
+    }
+}
+
+/* 卡片內文靠左對齊 */
+.feature .card p {
+    text-align: left;
+}
+
+/* pad, mobile: card order is different from desktop 花惹發 */
+@media (max-width: 992px) {
+    .feature .order-price {
+        order: 3;
+    }
+
+    .feature .order-20min {
+        order: 1;
+    }
+
+    .feature .order-support {
+        order: 2;
+    }
+
+    .feature .order-about {
+        order: 4;
+    }
+}
+
+/**************
+Classic series
+經典系列鏡框
+******************/
+.classic {
+    padding: 64px 0 80px;
+}
+
+.classic h2 {
+    font-weight: 600;
+
+    font-size: 48px;
+    line-height: 1.5em;
+
+    color: #650300;
+
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* 圖片與文字排版 */
+.classic ul li {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 32px;
+}
+
+.classic ul li:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.classic ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* 經典系列鏡框 圖片容器 */
+.classic .series .img-wrap {
+    width: 792px;
+    height: 320px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-right: 24px;
+}
+
+.classic .sunglasses .img-wrap {
+    margin-left: 24px;
+    margin-right: 0;
+}
+
+.classic .optical .img-wrap {
+    background-image: url(../img/product-1.png);
+}
+
+.classic .sunglasses .img-wrap {
+    background-image: url(../img/product-2.png);
+
+    /* for hover change image */
+    position: relative;
+}
+
+/* 參考助教作法, hover 換圖
+* 利用 偽元素 與 opacity
+*/
+.classic .sunglasses .img-wrap::before {
+    content: '';
+
+    background: url("../img/product-2-color.png") no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0;
+}
+
+.classic .sunglasses .img-wrap:hover::before {
+    opacity: 1;
+}
+
+.classic .functional .img-wrap {
+    background-image: url(../img/product-3.png);
+}
+
+
+.series .product-name {
+    display: flex;
+}
+
+.classic .icon-wrap {
+    width: 48px;
+
+    margin-right: 8px;
+
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* diamond icon*/
+.optical .icon-wrap {
+    background-image: url(../img/icon-diamond.svg);
+}
+
+/* sun icon */
+.sunglasses .icon-wrap {
+    background-image: url(../img/icon-sun.svg);
+}
+
+/* thunder icon */
+.functional .icon-wrap {
+    background-image: url(../img/icon-thunder.svg);
+}
+
+.classic p {
+    font-weight: 900;
+
+    font-size: 48px;
+    line-height: 1.5em;
+
+    font-style: italic;
+    color: #AA0601;
+}
+
+/* pad */
+@media (max-width: 992px) {
+    .classic {
+        padding: 40px 0 40px;
+    }
+
+    .classic h2 {
+        font-size: 32px;
+        line-height: 1.5em;
+
+        margin-bottom: 32px;
+    }
+
+    .classic ul li {
+        justify-content: start;
+    }
+
+    /* 圖片與文字排版 */
+    .classic ul li:nth-child(2) {
+        flex-direction: row;
+    }
+
+    /* 經典系列鏡框 圖片容器 */
+    .classic .series .img-wrap {
+        max-width: 410px;
+
+        /* 387 / 672*/
+        width: 57.6%;
+
+        /* 不設定height 圖片比較小張 >"< */
+        height: 168px;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        margin-right: 24px;
+    }
+
+    /* 重置(reset) sunglassess 排版 */
+    .classic .sunglasses .img-wrap {
+        margin-left: 0;
+    }
+
+    .classic .product-name {
+        /* 63 * 3 + 24 *2 */
+        /* max-width: 237px; */
+
+        /* icon文字 就置中了 */
+        width: 42.4%;
+
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .classic .icon-wrap {
+        max-width: 32px;
+    }
+
+    .classic p {
+        font-weight: 900;
+
+        font-size: 28px;
+        line-height: 1.5em;
+
+        text-align: center;
+
+        font-style: italic;
+        color: #AA0601;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .classic {
+        padding: 24px 0 24px;
+    }
+
+    .classic h2 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .classic ul li {
+        width: 100%;
+
+        justify-content: center;
+        margin-left: 3%;
+        margin-right: 3%;
+
+        margin-bottom: 8px;
+    }
+
+    .classic .series .img-wrap {
+        max-width: 352px;
+        width: 100%;
+
+        height: 134px;
+
+        margin-right: 0;
+    }
+
+    .classic .product-name {
+        color: white;
+        position: absolute;
+        margin-left: 0;
+        z-index: 1;
+    }
+
+    .classic .icon-wrap {
+        filter: brightness(500);
+    }
+
+    .classic p {
+        color: #FFFFFF;
+    }
+}
+
+/* 以下開始參考助教的作法 */
+/************************
+* recommend
+* 顧客推薦
+**************************/
+.recommend {
+    padding-bottom: 5em;
+}
+
+.recommend h2 {
+    font-size: 3em;
+    line-height: 1.5em;
+
+    text-align: center;
+    /* pb60 */
+    /* 這是bug 嗎? 用 3.75em 會變成 180px */
+    /* margin-bottom: 3.75em; */
+    margin-bottom: 60px;
+}
+
+.recommend-list {
+    display: flex;
+}
+
+.recommend-list li {
+    width: 25%;
+    margin-right: 1.5rem;
+}
+
+.recommend-list img {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.card-content {
+    border: 1px solid #DEE2E6;
+
+    /* 因為每張圖底下 都推了margin 1em
+    所以 底下 內容再往上推 margin 1 em 補回來
+    */
+    margin-top: -1rem;
+}
+
+.recommend-list .card-content {
+    padding: 1rem;
+    line-height: 1.5em;
+}
+
+.card-content h4 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-content p {
+    margin-bottom: 1rem;
+}
+
+.card-content h5 {
+    color: #707070;
+}
+
+/* pad */
+@media (max-width: 992px) {
+    .recommend {
+        padding-bottom: 2.5em;
+    }
+
+    .recommend h2 {
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+
+    .recommend-list {
+        flex-wrap: wrap;
+    }
+
+    .recommend-list li {
+        width: 46%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .recommend {
+        padding-bottom: 1.5em;
+    }
+
+    .recommend h2 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .recommend-list li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .recommend-list img {
+        width: 100%;
+        height: 256px;
+        object-fit: cover;
+    }
+}
+
+/***************************************
+*  contact
+ **********************************/
+.contact {
+    background-color: #AA06010D;
+    padding-top: 4em;
+    padding-bottom: 5.75em;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-inner {
+    /* 792/ 1200 = 66% */
+    width: 66%;
+}
+
+.contact h2 {
+    text-align: center;
+
+    font-size: 3em;
+
+    /* line-height: 4.5em; */
+    line-height: 72px;
+
+    /* margin-bottom: 1.5em; */
+    margin-bottom: 24px;
+}
+
+.contact-inner p:first-of-type {
+    font-size: 1.25rem;
+    line-height: 30px;
+
+    /* margin-bottom: 1.25rem; */
+    margin-bottom: 20px;
+}
+
+.contact .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact .form-group label {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5em;
+
+    margin-bottom: 4px;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #000000;
+    padding: 1rem;
+    outline: 0;
+}
+
+/* 參考助教做法 可以讓checkbox 和後面的文字對齊 baseline */
+.contact-form .checkbox-description {
+    display: flex;
+
+    align-items: baseline;
+}
+
+.contact-form .checkbox-description p {
+    /*  42 -16*/
+    margin-bottom: 26px;
+}
+
+.contact .form-group input[type=checkbox] {
+    width: auto;
+    margin-right: 0.25rem;
+}
+
+.contact .form-group input::placeholder,
+.contact .form-group textarea::placeholder {
+    color: black;
+    opacity: .2;
+}
+
+/* 確認送出 按鈕水平置中 */
+.contact-form .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form .btn {
+    background-color: #AA0601;
+    color: white;
+    width: 180px;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.5em;
+
+    padding: 1rem;
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact-form .btn:hover {
+    background-color: #650300;
+}
+
+/* pad 和 desktop 排版一致，使用百分比做RWD */
+
+/*mobile*/
+@media (max-width: 767px) {
+
+    .contact-inner {
+        width: 95%;
+    }
+
+    .contact-inner p:first-of-type {
+        font-size: 1rem;
+    }
+
+    .contact .form-group input,
+    .contact .form-group textarea {
+        padding: 7px 12px;
+    }
+}
