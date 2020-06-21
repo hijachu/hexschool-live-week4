@@ -43,7 +43,7 @@ function sass() {
   return gulp.src(envOptions.style.src)
     .pipe($.sourcemaps.init())
     .pipe($.sass().on('error', $.sass.logError))
-    .pipe($.postcss(plugins))
+    // .pipe($.postcss(plugins))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest(envOptions.style.path))
     .pipe(
