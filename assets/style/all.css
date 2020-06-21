@@ -127,20 +127,128 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.bg-center {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.d-flex {
+  display: flex; }
+
+.flex-column {
+  flex-direction: column; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.jc-center {
+  justify-content: center; }
+
+.jc-star {
+  justify-content: flex-start; }
+
+.jc-end {
+  justify-content: flex-end; }
+
+.jc-around {
+  justify-content: space-around; }
+
+.jc-between {
+  justify-content: space-between; }
+
+.align-star {
+  align-items: flex-start; }
+
+.align-center {
+  align-items: center; }
+
+.align-end {
+  align-items: flex-end; }
+
+.h-100 {
+  height: 100%; }
+
+.mr-1 {
+  margin-right: 0.5rem; }
+
+.mb-1 {
+  margin-bottom: 0.5rem; }
+
+.mb-2 {
+  margin-bottom: 1rem; }
+
+.border-t {
+  border-top: 1px solid #000 !important; }
+
+.sub-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3.75rem; }
+  @media (max-width: 992px) {
+    .sub-title {
+      font-size: 2rem;
+      margin-bottom: 2rem; } }
+  @media (max-width: 767px) {
+    .sub-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem; } }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-white {
+  color: #fff; }
+
+.text-p-dark {
+  color: #650300; }
+
+@media (max-width: 992px) {
+  .sm-img {
+    display: none; } }
+
+.md-img {
+  display: none; }
+  @media (max-width: 992px) {
+    .md-img {
+      display: block; } }
+
+@media (max-width: 992px) {
+  .jc-md-center {
+    justify-content: center; }
+  .order-md-1 {
+    order: 1; }
+  .order-md-2 {
+    order: 2; } }
+
+@media (max-width: 767px) {
+  .d-sm-none {
+    display: block; }
+  .jc-sm-center {
+    justify-content: center; }
+  .mb-sm-1 {
+    margin-bottom: 0.5rem; } }
+
 /* rwd img css */
 img {
   max-width: 100%;
   height: auto; }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
 /* 全域 border box */
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 .container {
   max-width: 1200px;
@@ -153,15 +261,9 @@ header {
   background: #AA0601;
   height: 108px;
   padding: 0 88px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: space-between;
+  align-items: center; }
 
 .logo a {
   display: block;
@@ -175,12 +277,8 @@ header {
   color: #FFFFFF; }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   /* 80*2 + 332 */
   width: 100%;
   max-width: 492px;
@@ -216,16 +314,9 @@ header {
   header {
     height: 50px;
     position: relative;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .logo a {
     width: 48px;
     height: 30px;
@@ -239,16 +330,9 @@ header {
     top: 50px;
     width: 100%;
     max-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     overflow: hidden;
-    -webkit-transition: all 0.8s;
-    -o-transition: all 0.8s;
     transition: all 0.8s;
     z-index: 1; }
   .menu.active {
@@ -273,12 +357,8 @@ header {
   color: #ffffff; }
 
 .footer .linkMap-contactMethod-socialIcon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   /* 24px */
   margin-bottom: 1.5rem;
   border-bottom: 1px solid white; }
@@ -286,8 +366,6 @@ header {
 .footer .link-map {
   /* 32px */
   margin-bottom: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 
 .footer .link-map li {
@@ -311,12 +389,8 @@ header {
   line-height: 54px; }
 
 .footer .info-contact li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   /* 16px */
   margin-bottom: 1rem; }
 
@@ -325,19 +399,11 @@ header {
 
 .footer .info-contact li .img-wrap {
   width: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: start;
+  align-items: center; }
 
 .footer .info-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 
 .footer .info-social li {
@@ -347,15 +413,9 @@ header {
   margin-right: 0; }
 
 .footer .copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: start;
+  align-items: center; }
 
 .footer .copyright img {
   display: block;
@@ -364,12 +424,8 @@ header {
 
 .footer .statement-policy {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  justify-content: space-between; }
 
 .footer .policy a {
   font-size: 14px;
@@ -432,14 +488,9 @@ header {
     height: 20px;
     margin-right: 5px; }
   .footer .copyright {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
     font-size: 14px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
+    align-items: flex-end; }
   .footer .copyright img {
     display: block;
     width: 46px;
@@ -465,15 +516,9 @@ Cover Page
 
 .anchor-slogan {
   height: 840px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: flex-end;
+  align-items: center; }
 
 .cover-title {
   text-align: right;
@@ -582,33 +627,21 @@ Cover Page
 /* 卡片與卡片之間的排版 */
 .feature .card,
 .feature .card-collection {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 
 .feature .card-collection {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   /*每張卡片齊頭*/
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  align-items: flex-start; }
 
 /* 卡片內容排版 */
 .feature .card {
   /* pb 為0, 底下 paragraph 直接碰在 card 最底部 */
   padding: 16px 37px 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   /* 預設由上往下排排，但排版為水平置中 */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   /* 每張圖左右間隔 206px 和桌機版 XD稿 一樣*/
   width: 23.5%; }
 
@@ -629,12 +662,8 @@ Cover Page
 /* Set card img container */
 .feature .card .img-wrap {
   /* svg圖檔垂直置中於100*100 的容器中 */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100px;
   height: 100px;
   margin-bottom: 40px; }
@@ -664,21 +693,13 @@ Cover Page
 /* pad, mobile: card order is different from desktop 花惹發 */
 @media (max-width: 992px) {
   .feature .order-price {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3; }
+    order: 3; }
   .feature .order-20min {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1; }
+    order: 1; }
   .feature .order-support {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2; }
+    order: 2; }
   .feature .order-about {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4; } }
+    order: 4; } }
 
 /**************
 Classic series
@@ -697,19 +718,12 @@ Classic series
 
 /* 圖片與文字排版 */
 .classic ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 32px; }
 
 .classic ul li:nth-child(2) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse; }
+  flex-direction: row-reverse; }
 
 .classic ul li:last-child {
   margin-bottom: 0; }
@@ -755,8 +769,6 @@ Classic series
   background-image: url(../img/product-3.png); }
 
 .series .product-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 
 .classic .icon-wrap {
@@ -794,15 +806,10 @@ Classic series
     line-height: 1.5em;
     margin-bottom: 32px; }
   .classic ul li {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start; }
+    justify-content: start; }
   /* 圖片與文字排版 */
   .classic ul li:nth-child(2) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
+    flex-direction: row; }
   /* 經典系列鏡框 圖片容器 */
   .classic .series .img-wrap {
     max-width: 410px;
@@ -821,9 +828,7 @@ Classic series
     /* max-width: 237px; */
     /* icon文字 就置中了 */
     width: 42.4%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     /* align-items: center; */ }
   .classic .icon-wrap {
     max-width: 32px; }
@@ -844,9 +849,7 @@ Classic series
     margin-bottom: 16px; }
   .classic ul li {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-left: 3%;
     margin-right: 3%;
     margin-bottom: 8px; }
@@ -861,8 +864,7 @@ Classic series
     margin-left: 0;
     z-index: 1; }
   .classic .icon-wrap {
-    -webkit-filter: brightness(500);
-            filter: brightness(500); }
+    filter: brightness(500); }
   .classic p {
     color: #FFFFFF; } }
 
@@ -884,8 +886,6 @@ Classic series
   margin-bottom: 60px; }
 
 .recommend-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 
 .recommend-list li {
@@ -925,8 +925,7 @@ Classic series
     font-size: 2em;
     margin-bottom: 2em; }
   .recommend-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    flex-wrap: wrap; }
   .recommend-list li {
     width: 46%;
     margin-bottom: 1.5rem; } }
@@ -945,8 +944,7 @@ Classic series
   .recommend-list img {
     width: 100%;
     height: 256px;
-    -o-object-fit: cover;
-       object-fit: cover; } }
+    object-fit: cover; } }
 
 /***************************************
 *  contact
@@ -957,16 +955,9 @@ Classic series
   padding-bottom: 5.75em; }
 
 .contact .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  flex-direction: column;
+  align-items: center; }
 
 .contact-inner {
   /* 792/ 1200 = 66% */
@@ -1007,12 +998,8 @@ Classic series
 
 /* 參考助教做法 可以讓checkbox 和後面的文字對齊 baseline */
 .contact-form .checkbox-description {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline; }
+  align-items: baseline; }
 
 .contact-form .checkbox-description p {
   /*  42 -16*/
@@ -1022,22 +1009,6 @@ Classic series
   width: auto;
   margin-right: 0.25rem; }
 
-.contact .form-group input::-webkit-input-placeholder, .contact .form-group textarea::-webkit-input-placeholder {
-  color: black;
-  opacity: .2; }
-
-.contact .form-group input::-moz-placeholder, .contact .form-group textarea::-moz-placeholder {
-  color: black;
-  opacity: .2; }
-
-.contact .form-group input:-ms-input-placeholder, .contact .form-group textarea:-ms-input-placeholder {
-  color: black;
-  opacity: .2; }
-
-.contact .form-group input::-ms-input-placeholder, .contact .form-group textarea::-ms-input-placeholder {
-  color: black;
-  opacity: .2; }
-
 .contact .form-group input::placeholder,
 .contact .form-group textarea::placeholder {
   color: black;
@@ -1045,15 +1016,9 @@ Classic series
 
 /* 確認送出 按鈕水平置中 */
 .contact-form .submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: center;
+  align-items: center; }
 
 .contact-form .btn {
   background-color: #AA0601;
@@ -1080,5 +1045,84 @@ Classic series
   .contact .form-group input,
   .contact .form-group textarea {
     padding: 7px 12px; } }
+
+.faqBanner {
+  background-image: url(../img/FAQ/faq-banner.png);
+  height: 304px; }
+  @media (max-width: 992px) {
+    .faqBanner {
+      background-image: url(../img/FAQ/faq-banner-md@2x.png); } }
+  @media (max-width: 767px) {
+    .faqBanner {
+      background-image: url(../img/FAQ/faq-banner-sm@2x.png);
+      height: 143px; } }
+  .faqBanner .container {
+    position: relative; }
+  .faqBanner__text {
+    font-size: 64px;
+    margin-right: 10px;
+    position: absolute;
+    line-height: 1.5;
+    left: 12px;
+    bottom: 0; }
+    @media (max-width: 992px) {
+      .faqBanner__text {
+        font-size: 3rem; } }
+    @media (max-width: 767px) {
+      .faqBanner__text {
+        font-size: 1.75rem; } }
+  .faqBanner__icon {
+    margin-left: 16px; }
+    @media (max-width: 992px) {
+      .faqBanner__icon {
+        width: 48px;
+        margin-left: 8px; } }
+    @media (max-width: 767px) {
+      .faqBanner__icon {
+        width: 24px; } }
+
+.question {
+  padding-top: 88px;
+  padding-bottom: 88px; }
+  @media (max-width: 992px) {
+    .question {
+      padding-top: 40px;
+      padding-bottom: 104px; } }
+  @media (max-width: 767px) {
+    .question {
+      padding-top: 24px;
+      padding-bottom: 56px; } }
+  .question__title {
+    font-size: 2rem; }
+    @media (max-width: 992px) {
+      .question__title {
+        font-size: 1.25rem; } }
+  .question .list__item:not(.active) .arrow {
+    transform: rotate(180deg);
+    transition: all .35s; }
+  .question .list__header {
+    padding: 22px 38px;
+    border: 1px solid #000;
+    border-top: 0; }
+    .question .list__header:hover {
+      color: #AA0601; }
+    @media (max-width: 767px) {
+      .question .list__header {
+        padding: 16px; } }
+  .question .list__title {
+    font-size: 1.25rem; }
+    @media (max-width: 992px) {
+      .question .list__title {
+        font-size: 1rem; } }
+  .question .list__body {
+    padding: 22px 38px;
+    background-color: #F2F2F2;
+    border: 1px solid #000;
+    border-top: 0; }
+    @media (max-width: 767px) {
+      .question .list__body {
+        padding: 16px; } }
+  .question .list .arrow {
+    transition: all .35s; }
 
 /*# sourceMappingURL=all.css.map */
