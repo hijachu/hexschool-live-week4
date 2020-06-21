@@ -611,8 +611,7 @@ Cover Page
       line-height: 2em; } }
   .feature .card-collection {
     /* 卡片與卡片之間的排版 */
-    display: flex; }
-  .feature .card-collection {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     /*每張卡片齊頭*/
